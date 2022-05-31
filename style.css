@@ -1,0 +1,21 @@
+body {
+    min-width: 98vh;
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 90vh;
+    width: 1000px;
+    display: flex;
+}
+
+.hero,
+ img {
+    max-width: 500px;
+    max-height: 90vh;
+}
