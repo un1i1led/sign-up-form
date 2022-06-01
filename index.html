@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>sign-up</title>
+    <title>Sign-up</title>
 </head>
 <body>
     <div class="main">
@@ -52,16 +52,31 @@
                     <div class="form-main">
                         <div class="form-row">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" 
+                            id="password" minlength="6">
                         </div>
                         <div class="form-row">
                             <label for="confirm">Confirm Password</label>
-                            <input type="password" name="confirm" id="confirm">
+                            <input type="password" name="confirm" 
+                            id="confirm">
                         </div>
                     </div>
                 </form>
             </div>
+            <div class="bottom-bit">
+                <button type="submit">Create Account</button>
+                <p id="loginprompt">Already have an account? 
+                    <a href="#">Log in</a>
+                </p>
+            </div>
         </div>
+    </div>
+    <div class="footer">
+        <p class="foot"><a href="https://github.com/un1i1led" 
+            target="_blank"rel="noopener noreferrer">un1i1led</a> for 
+            <a href="https://theodinproject.com">The Odin Project</a>,
+            gif by <a href="https://www.deviantart.com/kirokaze">
+                kirokaze</a></p>
     </div>
 </body>
 </html>
