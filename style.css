@@ -2,6 +2,7 @@ body {
     min-width: 98vh;
     min-height: 98vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -36,12 +37,12 @@ img {
 }
 
 .text {
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 .big-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .form {
@@ -51,6 +52,7 @@ img {
 .form-main {
     display: flex;
     gap: 100px;
+    padding-bottom: 10px;
 }
 
 .form-row {
@@ -58,8 +60,70 @@ img {
     flex-direction: column;
 }
 
-input {
-    height: 25px;
-    width: 220px;
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
+input {
+    height: 25px;
+    width: 230px;
+    border: 1px solid rgb(155, 152, 152);
+    border-radius: 3px;
+}
+
+input[type="email"]:invalid,
+input[type="password"]:invalid {
+    color: red;
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid rgb(255, 0, 191);
+    box-shadow: none;
+}
+
+.bottom-bit {
+    padding-top: 25px;
+}
+
+button[type="submit"] {
+    height: 50px;
+    width: 220px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    background-color: #f51bc8;
+    color: white;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    transition-duration: 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a0a5b;
+    cursor: pointer;
+}
+
+#loginprompt {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #f51bc8;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    color: #0a0a5b;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.foot {
+    margin: 0;
+}
