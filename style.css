@@ -45,8 +45,20 @@ img {
     font-size: 20px;
 }
 
+.big-text:first-of-type {
+    margin-bottom: 0px;
+}
+
+#secondh1 {
+    margin-top: 2px;
+}
+
+.italic {
+    font-style: italic;
+}
+
 .form {
-    padding-top: 120px;
+    margin-top: 60px;
 }
 
 .form-main {
@@ -72,11 +84,10 @@ input {
     border-radius: 3px;
 }
 
-input[type="email"]:invalid,
-input[type="password"]:invalid {
+.error {
     color: red;
     border: 1px solid red;
-}
+} 
 
 input:focus {
     border: 1px solid rgb(255, 0, 191);
@@ -127,3 +138,10 @@ a:hover {
 .foot {
     margin: 0;
 }
+
+button:disabled,
+button:disabled:hover {
+    background-color: gray;
+    cursor: default;
+}
+
