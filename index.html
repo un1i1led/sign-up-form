@@ -22,27 +22,35 @@
         <div class="info">
             <div class="text">
                 <h1 class="big-text">This is not a real online service!
-                    You know you need something like this in your life to
+                    You know you need something like
+                    this in your life to
                     help you realize your deepest dreams.
                 </h1>
-                <h1 class="big-text">You know you want to.</h1>
+                <h1 class="big-text" id="secondh1">
+                    Sign up <span class="italic">now</span> to get started.
+                </h1>
+                <h1 class="big-text">You <span class="italic">know</span> 
+                    you want to.</h1>
             </div>
             <div class="form">
-                <form action="post">
+                <form>
                     <div class="form-main">
                         <div class="form-row">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" 
+                            id="first-name" class="inputfield" required>
                         </div>
                         <div class="form-row">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" 
+                            id="last-name" class="inputfield" required>
                         </div>
                     </div>
                     <div class="form-main">
                         <div class="form-row">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email"
+                            class="inputfield" required>
                         </div>
                         <div class="form-row">
                             <label for="phone">Phone Number</label>
@@ -53,18 +61,20 @@
                         <div class="form-row">
                             <label for="password">Password</label>
                             <input type="password" name="password" 
-                            id="password" minlength="6">
+                            id="password" minlength="6" class="inputfield"
+                            required>
                         </div>
                         <div class="form-row">
                             <label for="confirm">Confirm Password</label>
                             <input type="password" name="confirm" 
-                            id="confirm">
+                            id="confirm" minlength="6" class="inputfield" 
+                            required>
                         </div>
                     </div>
+                    <button type="submit" id="submit">Create Account</button>
                 </form>
             </div>
             <div class="bottom-bit">
-                <button type="submit">Create Account</button>
                 <p id="loginprompt">Already have an account? 
                     <a href="#">Log in</a>
                 </p>
@@ -74,8 +84,10 @@
     <div class="footer">
         <p class="foot"><a href="https://github.com/un1i1led" 
             target="_blank"rel="noopener noreferrer">un1i1led</a> for 
-            <a href="https://theodinproject.com">The Odin Project</a>,
-            gif by <a href="https://www.deviantart.com/kirokaze">
+            <a href="https://theodinproject.com" target="_blank" 
+            rel="noopener noreferrer">The Odin Project</a>,
+            art by <a href="https://www.deviantart.com/kirokaze" 
+            target="_blank" rel="noopener noreferrer">
                 kirokaze</a></p>
     </div>
 </body>
