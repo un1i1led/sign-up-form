@@ -92,6 +92,7 @@ input {
 input:focus {
     border: 1px solid rgb(255, 0, 191);
     box-shadow: none;
+    outline: none;
 }
 
 .bottom-bit {
